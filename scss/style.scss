@@ -1,0 +1,95 @@
+@import 'config';
+
+
+// Mobile First 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    color: $grayish-blue;
+    line-height: 1.6;
+}
+
+body {
+    background: $very-light-gray;
+}
+
+.container {
+    padding: 4rem 2rem;
+    width: 100vw;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.bold, h3 {
+    color: $very-dark-blue;
+}
+
+p {
+    font-size: 15px;
+}
+
+.heading {
+    margin-bottom: 4rem;
+    text-align: center;
+
+    p {
+        margin-top: 1.5rem;
+    }
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    height: 275px;
+    box-shadow: 2px 2px 10px 1px;
+    margin-bottom: 1.5rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    img {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
+.card-1 {
+    border-top: 4px solid $cyan-color;
+}
+
+.card-2 {
+    border-top: 4px solid $red-color;
+}
+
+.card-3 {
+    border-top: 4px solid $orange-color;
+}
+
+.card-4 {
+    border-top: 4px solid $blue-color;
+}
+    
+@media(min-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 4rem 4rem 4rem;
+        gap: 2rem;
+
+        .card {
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
